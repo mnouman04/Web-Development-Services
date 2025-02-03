@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Contact Form</title>
+    <link rel="stylesheet" href="clientcontactform.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Client Contact Form</h1>
+        </header>
+        <form>
+            <label for="names">Name:</label>
+            <input type="text" id="names" name="namess" placeholder="Enter your full name" required>
+
+            <label for="emails">Email:</label>
+            <input type="email" id="emails" name="email" placeholder="Enter your email" required>
+
+            <label for="phones">Contact Number:</label>
+            <input type="tel" id="phones" name="phone" placeholder="Enter your contact number" required>
+
+            <label>Event Type:</label>
+            <div class="radio-group">
+                <input type="radio" id="conference" name="event" value="Development">
+                <label for="conference">Development</label>
+                <input type="radio" id="workshop" name="event" value="Maitainance">
+                <label for="workshop">Maitainance</label>
+                <input type="radio" id="webinar" name="event" value="Udatation & Modifcation">
+                <label for="webinar">Udatation & Modifcation</label>
+            </div>
+            <label for="diet">Select Domain:</label>
+            <select name="diet" id="diet">
+                <option value="Performance Optimization">Performance Optimization</option>
+                <option value="Web Development (Frontend & Backend)">Web Development (Frontend & Backend)</option>
+                <option value="Responsive Web Design">Responsive Web Design</option>
+                <option value="API Development">API Development</option>
+                <option value="Database Management">Database Management</option>      
+            </select>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="chkbox1" name="terms" required>
+                <label for="chkbox1">I agree to the terms and conditions</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
